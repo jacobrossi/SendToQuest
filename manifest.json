@@ -3,7 +3,7 @@
   "description": "Use the context menu to send a link to your Meta Quest headset",
   "version": "0.1",
   "manifest_version": 3,
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus", "tabs"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
@@ -12,5 +12,8 @@
    "16": "icon16.png",
    "48": "icon48.png",
   "128": "icon128.png"
+ },
+ "action": {
+    "default_title": "Send to Meta Quest"
  }
 }
