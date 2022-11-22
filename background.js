@@ -31,7 +31,7 @@ function openSendToQuestPopup(linkUrl) {
     // Open flow in a popup
     chrome.windows.create({
         focused: true,
-        height: 500,
+        height: 600,
         width: 400,
         left: 300,
         top: 100,
