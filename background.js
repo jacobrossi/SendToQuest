@@ -20,7 +20,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
 function openSendToQuestPopup(linkUrl) {
     // Confirm it's an http/https link and not something else like chrome://
-    if (!linkUrl.startsWith("https://") && !linkUrl.startsWith("http://")) {
+    if (!linkUrl.toLowerCase().startsWith("https://")) {
         return;
     }
 
